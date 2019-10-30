@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_song_list"
+        android:title="Song List"
+        android:icon="@drawable/song_list"
+        android:state_checked="false"/>
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/search"/>
+    <item android:id="@+id/action_library"
+        android:title="Library"
+        android:icon="@drawable/library"/>
+</menu>

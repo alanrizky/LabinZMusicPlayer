@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "750092005725",
+    "firebase_url": "https://labinz-music-player.firebaseio.com",
+    "project_id": "labinz-music-player",
+    "storage_bucket": "labinz-music-player.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750092005725:android:bb5b99c2be715edc62b8b4",
+        "android_client_info": {
+          "package_name": "lmp.labinzmusicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750092005725-nu77606i66m466cdfl8kqka14cao4qpd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lmp.labinzmusicplayer",
+            "certificate_hash": "6f86bc08e6e030275387044ddc5ae0e5d7b45b56"
+          }
+        },
+        {
+          "client_id": "750092005725-hrk9cam3t16ar6asmjtrl97tdsrlu6p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiZNeMSYX7R-YKwEcl6anths5KKUcK6f8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750092005725-hrk9cam3t16ar6asmjtrl97tdsrlu6p3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
