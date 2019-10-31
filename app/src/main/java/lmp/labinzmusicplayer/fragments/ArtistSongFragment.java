@@ -4,26 +4,31 @@ package lmp.labinzmusicplayer.fragments;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.io.IOException;
+import java.util.ArrayList;
 
 import lmp.labinzmusicplayer.R;
+import lmp.labinzmusicplayer.SongInfo;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ArtistSongFragment extends Fragment {
 
+    private RecyclerView rvSong;
     private OnFragmentInteractionListener mListener;
     private PlayerActivityFragment playerActivity;
     private TextView filename;
+    private ArrayList<SongInfo> song = new ArrayList<>();
+
 
     public ArtistSongFragment() {
         // Required empty public constructor
@@ -76,6 +81,10 @@ public class ArtistSongFragment extends Fragment {
     }
 
     public interface OnFragmentInteractionListener {
-        void onFileNameFragmentClicked(View view);
+        public void onFileNameFragmentClicked(View view);
+    }
+
+    public interface OnItemClickListener {
+        void onItem(SongInfo item);
     }
 }
