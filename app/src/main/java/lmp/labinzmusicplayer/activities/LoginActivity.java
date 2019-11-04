@@ -110,9 +110,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     public void SuccessfulLoginHandle() {
         Intent i = new Intent(this, SplashLogin.class);
-        finish();
         startActivity(i);
-        finish();
     }
 
     @Override
