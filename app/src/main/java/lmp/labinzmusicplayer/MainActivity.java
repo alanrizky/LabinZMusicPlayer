@@ -1,17 +1,16 @@
 package lmp.labinzmusicplayer;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 import lmp.labinzmusicplayer.fragments.ArtistSongFragment;
 import lmp.labinzmusicplayer.fragments.LibraryFragment;
@@ -21,7 +20,6 @@ import lmp.labinzmusicplayer.fragments.SettingFragment;
 import lmp.labinzmusicplayer.fragments.SongListFragment;
 
 public class MainActivity extends AppCompatActivity implements
-        SongListFragment.OnFragmentInteractionListener,
         SearchFragment.OnFragmentInteractionListener,
         LibraryFragment.OnFragmentInteractionListener,
         BottomNavigationView.OnNavigationItemSelectedListener,
@@ -37,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
 
 
         songListFragment = new SongListFragment();
@@ -71,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
             case R.id.action_song_list:
+
                 fragment = new SongListFragment();
                 break;
             case R.id.action_search:
@@ -81,14 +79,6 @@ public class MainActivity extends AppCompatActivity implements
                 break;
         }
         return loadFragment(fragment);
-    }
-
-    @Override
-    public void onSongListFragmentClicked(View view) {
-        FragmentTransaction f = getSupportFragmentManager().beginTransaction();
-        f.setCustomAnimations(R.anim.enter_from_left,R.anim.exit_from_left,R.anim.enter_from_left,R.anim.exit_from_right);
-        f.replace(R.id.fragment_container, artistSongFragment);
-        f.commit();
     }
 
     @Override
@@ -104,14 +94,6 @@ public class MainActivity extends AppCompatActivity implements
         FragmentTransaction f = getSupportFragmentManager().beginTransaction();
         f.setCustomAnimations(R.anim.enter_from_left,R.anim.exit_from_left,R.anim.enter_from_left,R.anim.exit_from_right);
         f.replace(R.id.fragment_container, artistSongFragment);
-        f.commit();
-    }
-
-    @Override
-    public void onSettingFragmentClicked(View view) {
-        FragmentTransaction f = getSupportFragmentManager().beginTransaction();
-        f.setCustomAnimations(R.anim.enter_from_left,R.anim.exit_from_left,R.anim.enter_from_left,R.anim.exit_from_right);
-        f.replace(R.id.fragment_container, settingFragment);
         f.commit();
     }
 }

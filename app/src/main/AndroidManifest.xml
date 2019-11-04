@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lmp.labinzmusicplayer">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.ForgotPasswordActivity"></activity>
-        <activity android:name=".activities.PlayerActivity"></activity>
+<!--        <activity android:name=".activities.PlayerActivity"></activity>-->
         <activity android:name=".activities.CreateAccountActivity"></activity>
         <activity android:name=".splash.SplashLogin"></activity>
         <activity android:name=".splash.SplashCreateAccount"></activity>

@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import lmp.labinzmusicplayer.R;
-import lmp.labinzmusicplayer.SongInfo;
+//import lmp.labinzmusicplayer.SongInfo;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,7 +27,7 @@ public class ArtistSongFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
     private PlayerActivityFragment playerActivity;
     private TextView filename;
-    private ArrayList<SongInfo> song = new ArrayList<>();
+//    private ArrayList<SongInfo> song = new ArrayList<>();
 
 
     public ArtistSongFragment() {
@@ -85,6 +85,6 @@ public class ArtistSongFragment extends Fragment {
     }
 
     public interface OnItemClickListener {
-        void onItem(SongInfo item);
+//        void onItem(SongInfo item);
     }
 }

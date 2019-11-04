@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00555555">
-
-
-    <TextView
-        android:id="@+id/bandName"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="@android:color/white"
-        android:paddingTop="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Song Name" />
-
-    <TextView
-        android:id="@+id/songName"
-        android:gravity="center"
-        android:padding="0dp"
-        android:textColor="@android:color/white"
-        android:paddingTop="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Song Name" />
-
-
-</LinearLayout>
+    android:background="#00555555"/>
